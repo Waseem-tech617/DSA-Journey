@@ -27,3 +27,14 @@ for(let i=0;i<=Math.floor(factors/2);i++){
     }
 }
   console.log(factors);
+
+//   Q3. Checking Prime Number.
+let n=Number(prompt("Enter a num"));
+let isprime=true;
+for (let i= 2; i <= Math.floor(n/2); i++) {
+  if(n%i===0){
+    isprime=false;
+    break;
+  }
+}
+console.log(isprime);
