@@ -18,3 +18,11 @@ else{
     console.log(sum);
 }
 }
+
+//  Q2.factors of numbers.
+let factors=Number(prompt("Enter a num"));
+for(let i=0;i<=factors;i++){
+    if(factors%i===0){
+        console.log(i);
+    }
+}
