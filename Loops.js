@@ -19,10 +19,11 @@ else{
 }
 }
 
-//  Q2.factors of numbers.
+//  Q2.factors of numbers with best method reduce time and memory.
 let factors=Number(prompt("Enter a num"));
-for(let i=0;i<=factors;i++){
+for(let i=0;i<=Math.floor(factors/2);i++){
     if(factors%i===0){
         console.log(i);
     }
 }
+  console.log(factors);
