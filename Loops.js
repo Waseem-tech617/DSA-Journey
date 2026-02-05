@@ -18,4 +18,3 @@ else{
     console.log(sum);
 }
 }
-
