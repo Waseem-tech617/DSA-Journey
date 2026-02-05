@@ -28,13 +28,17 @@ for(let i=0;i<=Math.floor(factors/2);i++){
 }
   console.log(factors);
 
-//   Q3. Checking Prime Number.
-let n=Number(prompt("Enter a num"));
-let isprime=true;
-for (let i= 2; i <= Math.floor(n/2); i++) {
-  if(n%i===0){
-    isprime=false;
-    break;
-  }
+//   Q3. Checking Prime Number DSA stile.
+function isPrime(n){
+    if(n===1)  return false;
+    if(n===2) return true;
+    if(n%2===0) return false;
+    for(let i=3;i<=Math.sqrt(n);i+=2){
+        if(n%i===0) return false;
+    }
+   return true;
 }
-console.log(isprime);
+console.log(isPrime(1));
+
+
+
