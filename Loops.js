@@ -40,5 +40,24 @@ function isPrime(n){
 }
 console.log(isPrime(1));
 
+// Q4.Sum of digit use while loop.
+let sum=prompt("enter a num");
+if(sum===null){
+console.log("canceled");
 
+} else{
+let n=Number(sum);
+if(isNaN(n)){
+    console.log("invalid number");
+}else{
+    let i=0;
+    let sums=0;
+    while(i<=n){
+        sums+=i;
+        i++;
+    }
+    console.log(`sum of ${n} = ${sums} `);
+
+}
+}
 
