@@ -61,3 +61,30 @@ if(isNaN(n)){
 }
     }
 }
+
+
+// Q5.Validation check.
+
+let num;
+let valid = false;
+
+while (!valid) {
+    let input = prompt("Enter a number between 1 and 10");
+
+    if (input === null) {
+        console.log("Canceled");
+        break;
+    }
+
+    num = Number(input);
+
+    if (!isNaN(num) && num >= 1 && num <= 10) {
+        console.log(`You entered: ${num}`);
+        valid = true;
+    } else {
+        console.log("Invalid input, try again!");
+    }
+}
+
+
+
