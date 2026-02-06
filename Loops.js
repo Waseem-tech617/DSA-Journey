@@ -44,20 +44,20 @@ console.log(isPrime(1));
 let sum=prompt("enter a num");
 if(sum===null){
 console.log("canceled");
-
 } else{
 let n=Number(sum);
 if(isNaN(n)){
     console.log("invalid number");
 }else{
-    let i=0;
-    let sums=0;
-    while(i<=n){
-        sums+=i;
-        i++;
+    if(n>0){
+    let su=0;
+    while(n>0){
+     var rem=n%10;
+      su+=rem;
+      n=Math.floor(n/10);
     }
-    console.log(`sum of ${n} = ${sums} `);
+    console.log(`sum of digits is = ${su} `);
 
 }
+    }
 }
-
