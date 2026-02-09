@@ -115,3 +115,17 @@ while(user>0){
 //  user=Number(prompt("enter a num"));
 }
 console.log("program eneded");
+
+// ✅ Question 7
+// User se password baar baar lo.
+// Jab tak user "admin123" sahi enter na kare, dubara poochte raho.
+// Sahi hote hi → "Login successful" print karo.
+ let password=prompt("write passsword");
+ while(password!=="admin123"){
+    console.log("Try again");
+     password=prompt("write passsword");
+ }
+ console.log("success login");
+
+
+
