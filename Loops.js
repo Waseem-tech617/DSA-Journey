@@ -101,3 +101,17 @@ if(password===null){
     }
 }
 
+
+// ✅ Question 6:
+// User se ek number lo.
+// Jab tak number positive ho, uska square print karo.
+// Agar user negative de de → program stop.
+
+let user=Number(prompt("enter a num"));
+while(user>0){
+ let square=0;
+  square=user*user;
+  console.log(square);
+//  user=Number(prompt("enter a num"));
+}
+console.log("program eneded");
