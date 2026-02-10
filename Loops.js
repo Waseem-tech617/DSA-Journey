@@ -136,3 +136,18 @@ while(n>0){
     n=Math.floor(n/10);
 }
    console.log(rev);
+
+
+// ✅ Question 9:strong number.
+let number=1234;
+let sumfactorial=0;
+while(number>0){
+    let rem=number%10;
+    let fact=1;
+    for(let i=1;i<=rem;i++){
+         fact=fact*i;
+    }
+    sumfactorial+=fact;
+    number=Math.floor(number/10);
+}
+console.log(sumfactorial);
