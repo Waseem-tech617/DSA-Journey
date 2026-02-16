@@ -19,3 +19,12 @@ for (let i = 2; i < arr.length; i++) {
      
 }
 console.log(secondmin); 
+
+//  Q3.Reverse of array.
+let arr=[1,2,3,4,5];
+let temp=[];
+for(let i=arr.length-1;i>=0;i--){
+    temp.push(arr[i]);
+}
+ console.log(temp);
+
