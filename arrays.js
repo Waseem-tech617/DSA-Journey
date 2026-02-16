@@ -16,7 +16,7 @@ for (let i = 2; i < arr.length; i++) {
     }else if(arr[i]<secondmin && fisrtmin!=arr[i]){
         secondmin=arr[i];
     }
-     
+
 }
 console.log(secondmin); 
 
@@ -54,13 +54,15 @@ while(i<arr.length){
 }
 console.log(arr);
 
-// Q6.left rotation by element by 1.
-let arr=[1,2,3,4,5,6];
+// Q6.left rotation by element by 2.
+let arr=[1,2,3,4,5];
 let copy=arr[0];
+let copy2=arr[1];
 for(let i=0;i<=arr.length-1;i++){
-    arr[i]=arr[i+1];
+    arr[i]=arr[i+2];
 }
-arr[arr.length-1]=copy;
+arr[arr.length-2]=copy;
+arr[arr.length-1]=copy2;
 
 console.log(arr);
 
@@ -73,3 +75,32 @@ for(let i=arr.length-1;i>=0;i--){
 }
 arr[0]=copy;
 console.log(arr);
+
+
+
+// Q8.left rotation by element by 1.
+let arr = [1, 2, 3, 4, 5];
+let copy = arr[0];
+for (let i = 0; i <= arr.length - 1; i++) {
+    arr[i] = arr[i + 1];
+}
+arr[arr.length - 2] = copy;
+console.log(arr);
+
+
+
+// // Q9.left rotation by element by k element.
+let arr = [1, 2, 3, 4, 5];
+let k = prompt("enter a k value");
+k = k % arr.length;
+for (let i = 1; i <= k; i++) {
+    let copy = arr[0];
+    for (let j = 0; j <= arr.length - 1; j++) {
+        arr[j] = arr[j + 1];
+    }
+    arr[arr.length - 1] = copy;
+}
+console.log(arr);
+
+
+
