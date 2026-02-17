@@ -112,15 +112,14 @@ for (let i = 0; i <= arr.length - 1; i++) {
 }
 console.log(array);
 
-// // Q10.left rotation by  k element creating without space.
+// // Q10.right rotation by  k element creating without space.
 let arr = [1, 2, 3, 4, 5];
 let k = Number(prompt("enter a k value"));
 k = k % arr.length;
+Reverse(0, arr.length - 1);
 Reverse(0, k - 1);
 Reverse(k, arr.length - 1);
-Reverse(0, arr.length - 1);
 console.log(arr);
-
 function Reverse(i, j) {
     while (i < j) {
         let temp = arr[i];
