@@ -101,6 +101,35 @@ for (let i = 1; i <= k; i++) {
     arr[arr.length - 1] = copy;
 }
 console.log(arr);
+k = k % arr.length;
+
+// // Q9.left rotation by  k element by space.
+let arr = [1, 2, 3, 4, 5];
+let k = Number(prompt("enter a k value"));
+let array = new Array(arr.length);
+for (let i = 0; i <= arr.length - 1; i++) {
+    array[i] = arr[(i + k) % arr.length]
+}
+console.log(array);
+
+// // Q10.left rotation by  k element creating without space.
+let arr = [1, 2, 3, 4, 5];
+let k = Number(prompt("enter a k value"));
+k = k % arr.length;
+Reverse(0, k - 1);
+Reverse(k, arr.length - 1);
+Reverse(0, arr.length - 1);
+console.log(arr);
+
+function Reverse(i, j) {
+    while (i < j) {
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+}
 
 
 
