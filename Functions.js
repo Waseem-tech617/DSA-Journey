@@ -43,3 +43,11 @@ let even=numbers.filter(val => val%2===0);
 let doubel=even.map(val => val*2);
 console.log(even);
 console.log(doubel);
+
+// Question 6:👉 Function showProduct me direct destructuring se title aur price print karvao.
+let product = {id: 1, title: "Laptop", price: 50000};
+function showProduct({id,title,price}){
+    console.log(id,title);
+    
+}
+showProduct(product);
