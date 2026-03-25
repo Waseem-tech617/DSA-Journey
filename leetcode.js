@@ -18,3 +18,21 @@ if(nums1[i]>nums2[j]){
 }
 console.log(nums1);
 
+
+
+// QUESTION NO:2  Best time to sell and buy stock.
+let maximumprofit = function(prices) {
+    let max = 0;
+    let min = prices[0];
+    for (let i = 1; i < prices.length; i++) {
+        if (prices[i] < min) {
+            min = prices[i];
+        } else {
+            let profit = prices[i] - min;
+            max = Math.max(max, profit);
+        };
+    };
+    return max;
+};
+console.log(maximumprofit([7,1,5,3,6,4]));
+ 
